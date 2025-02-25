@@ -1,0 +1,8 @@
+        if ($user['Role'] == 'admin') {
+            header('Location: ../admin/admin.php');
+        } elseif ($user['Role'] == 'customer') {
+            header('Location: ../customer/customer.php');
+        } else {
+            header('Location: login.php');
+        }
+        exit();
