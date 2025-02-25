@@ -1,0 +1,3 @@
+$loggedin = isset($_SESSION['role']) && !empty($_SESSION['role']);
+$isadmin = $loggedin && $_SESSION['role'] == 'admin';
+$currentPage = htmlspecialchars($_SERVER['PHP_SELF'], ENT_QUOTES, 'UTF-8');
